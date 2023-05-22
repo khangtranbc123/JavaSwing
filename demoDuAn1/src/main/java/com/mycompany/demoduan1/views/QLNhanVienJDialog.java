@@ -16,6 +16,7 @@ public class QLNhanVienJDialog extends javax.swing.JDialog {
     public QLNhanVienJDialog(java.awt.Frame parent, boolean modal) {
         super(parent, modal);
         initComponents();
+        setLocationRelativeTo(null);
     }
 
     /**
