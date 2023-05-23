@@ -178,6 +178,6 @@ public class TrangChuJFrame extends javax.swing.JFrame {
     }
 
     private void open() {
-          new QLNhanVienJDialog(this, true).setVisible(true);
+          new QLNguoiHocJDialog(this, true).setVisible(true);
     }
 }
