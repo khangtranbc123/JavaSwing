@@ -13,7 +13,7 @@ public class Auth {
     public static NhanVien user = null;
 
     public static void clear() {
-        Auth.user = null;
+        Auth.user = null;   
     }
 
     public static boolean isLogin() {

@@ -21,7 +21,7 @@ public class NguoiHoc {
     private String email;
     private String ghiChu;
     private String maNV;
-    private Date ngayDK = new Date();
+    private Date ngayDK;
 
     @Override
     public String toString() {
