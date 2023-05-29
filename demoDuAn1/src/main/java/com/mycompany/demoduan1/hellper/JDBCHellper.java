@@ -16,7 +16,7 @@ import java.sql.SQLException;
  */
 public class JDBCHellper {
     private static String driver = "com.microsoft.sqlserver.jdbc.SQLServerDriver";
-    private static String dburl = "jdbc:sqlserver://localhost:1433;databaseName=EduSys";
+    private static String dburl = "jdbc:sqlserver://localhost:1433;databaseName=edusys";
     private static String username = "sa";
     private static String password = "123";
     

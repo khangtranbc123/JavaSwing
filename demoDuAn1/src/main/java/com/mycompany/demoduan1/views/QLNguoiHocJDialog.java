@@ -30,7 +30,7 @@ public class QLNguoiHocJDialog extends javax.swing.JDialog {
     public QLNguoiHocJDialog(java.awt.Frame parent, boolean modal) {
         super(parent, modal);
         initComponents();
-        this.getList();
+//        this.getList();
         setLocationRelativeTo(null);
     }
     public void getList() {

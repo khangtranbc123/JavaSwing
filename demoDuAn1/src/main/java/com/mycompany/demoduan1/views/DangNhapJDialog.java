@@ -7,6 +7,7 @@ package com.mycompany.demoduan1.views;
 import com.mycompany.demoduan1.icon.hellper.dao.NhanVienDAO;
 import com.mycompany.demoduan1.model.Auth;
 import com.mycompany.demoduan1.model.NhanVien;
+import com.mycompany.demoduan1.service.NhanVienService;
 import javax.swing.JOptionPane;
 
 /**
@@ -18,22 +19,26 @@ public class DangNhapJDialog extends javax.swing.JDialog {
     /**
      * Creates new form DangNhapJDialog
      */
-    NhanVienDAO dao = new NhanVienDAO();
+    NhanVienService nhanVienService = new NhanVienService();
     public DangNhapJDialog(java.awt.Frame parent, boolean modal) {
         super(parent, modal);
         initComponents();
         this.setLocationRelativeTo(null);
     }
     void login () {
-        String mamv = txtTaiKhoan.getText();
-        String password = new String(txtMatKhau.getPassword());
-        NhanVien nhanVien = dao.selectById(mamv);
-        if (nhanVien == null) {
+          NhanVien nhanVien = new NhanVien();
+          nhanVien.setMaNV(txtTaiKhoan.getText());
+          nhanVien.setMatKhau(new String(txtMatKhau.getPassword()));
+          int res =  nhanVienService.login(nhanVien);
+//        String mamv = txtTaiKhoan.getText();
+//        String password = new String(txtMatKhau.getPassword());
+//        NhanVien nhanVien = dao.selectById(mamv);
+        if (res == 1) {
             JOptionPane.showMessageDialog(this, "Tài khoản không tồn tại", "EduSys", JOptionPane.INFORMATION_MESSAGE);
-        } else if (!password.equals(nhanVien.getMatKhau())) {
+        } else if (res == 2) {
             JOptionPane.showMessageDialog(this, "Sai mật khẩu", "EduSys", JOptionPane.INFORMATION_MESSAGE);
         } else {
-            Auth.user = nhanVien;
+           
             this.dispose();
             JOptionPane.showMessageDialog(this, "Đăng nhập thành công", "EduSys", JOptionPane.INFORMATION_MESSAGE);
 
