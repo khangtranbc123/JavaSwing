@@ -27,7 +27,7 @@ public class NhanVienService {
         }
     }
     
-      public List<NhanVien> getList(){
+    public List<NhanVien> getList(){
         List<NhanVien> res = nhanVienDAO.selectAll();
         return res;
     }

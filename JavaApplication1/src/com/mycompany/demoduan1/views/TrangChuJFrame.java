@@ -41,6 +41,7 @@ public class TrangChuJFrame extends javax.swing.JFrame {
         jMenuItemNguoiHoc = new javax.swing.JMenuItem();
         jMenuItemKhoaHoc = new javax.swing.JMenuItem();
         jMenuItemChuyenDe = new javax.swing.JMenuItem();
+        jMenuItemChuyenDe1 = new javax.swing.JMenuItem();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("FPT POLYTECHNIC");
@@ -52,7 +53,7 @@ public class TrangChuJFrame extends javax.swing.JFrame {
 
         jMenu2.setText("Quản lý");
 
-        jMenuItemHocVien.setText("Học viên");
+        jMenuItemHocVien.setText("Người học");
         jMenuItemHocVien.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jMenuItemHocVienActionPerformed(evt);
@@ -60,7 +61,7 @@ public class TrangChuJFrame extends javax.swing.JFrame {
         });
         jMenu2.add(jMenuItemHocVien);
 
-        jMenuItemNguoiHoc.setText("Người học");
+        jMenuItemNguoiHoc.setText("Học viên");
         jMenuItemNguoiHoc.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jMenuItemNguoiHocActionPerformed(evt);
@@ -78,6 +79,14 @@ public class TrangChuJFrame extends javax.swing.JFrame {
             }
         });
         jMenu2.add(jMenuItemChuyenDe);
+
+        jMenuItemChuyenDe1.setText("Nhân viên");
+        jMenuItemChuyenDe1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItemChuyenDe1ActionPerformed(evt);
+            }
+        });
+        jMenu2.add(jMenuItemChuyenDe1);
 
         jMenuBar1.add(jMenu2);
 
@@ -104,7 +113,7 @@ public class TrangChuJFrame extends javax.swing.JFrame {
 
     private void jMenuItemHocVienActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItemHocVienActionPerformed
         // TODO add your handling code here:
-        this.open();
+        this.open(1);
     }//GEN-LAST:event_jMenuItemHocVienActionPerformed
 
     private void jMenuItemNguoiHocActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItemNguoiHocActionPerformed
@@ -114,6 +123,11 @@ public class TrangChuJFrame extends javax.swing.JFrame {
     private void jMenuItemChuyenDeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItemChuyenDeActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jMenuItemChuyenDeActionPerformed
+
+    private void jMenuItemChuyenDe1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItemChuyenDe1ActionPerformed
+        // TODO add your handling code here:
+        this.open(5);
+    }//GEN-LAST:event_jMenuItemChuyenDe1ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -156,6 +170,7 @@ public class TrangChuJFrame extends javax.swing.JFrame {
     private javax.swing.JMenu jMenu2;
     private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JMenuItem jMenuItemChuyenDe;
+    private javax.swing.JMenuItem jMenuItemChuyenDe1;
     private javax.swing.JMenuItem jMenuItemHocVien;
     private javax.swing.JMenuItem jMenuItemKhoaHoc;
     private javax.swing.JMenuItem jMenuItemNguoiHoc;
@@ -177,7 +192,12 @@ public class TrangChuJFrame extends javax.swing.JFrame {
         }).start();
     }
 
-    private void open() {
-          new QLNguoiHocJDialog(this, true).setVisible(true);
+    private void open(int type) {
+        if(type == 1){
+            new QLNguoiHocJDialog(this, true).setVisible(true);
+        }
+         if(type == 5){
+            new QLNhanVienJDialog(this, true).setVisible(true);
+        }
     }
 }

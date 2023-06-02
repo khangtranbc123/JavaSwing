@@ -5,9 +5,16 @@
         <group>
             <file>file:/C:/Users/Admin/Documents/NetBeansProjects/JavaApplication1/src/com/mycompany/demoduan1/hellper/JDBCHellper.java</file>
             <file>file:/C:/Users/Admin/Documents/NetBeansProjects/JavaApplication1/src/com/mycompany/demoduan1/views/TrangChuJFrame.java</file>
-            <file>file:/C:/Users/Admin/Documents/NetBeansProjects/JavaApplication1/src/javaapplication1/JavaApplication1.java</file>
             <file>file:/C:/Users/Admin/Documents/NetBeansProjects/JavaApplication1/src/com/mycompany/demoduan1/service/NhanVienService.java</file>
+            <file>file:/C:/Users/Admin/Documents/NetBeansProjects/JavaApplication1/src/com/mycompany/demoduan1/model/NguoiHoc.java</file>
             <file>file:/C:/Users/Admin/Documents/NetBeansProjects/JavaApplication1/src/com/mycompany/demoduan1/views/DangNhapJDialog.java</file>
+            <file>file:/C:/Users/Admin/Documents/NetBeansProjects/JavaApplication1/src/com/mycompany/demoduan1/hellper/MsgBox.java</file>
+            <file>file:/C:/Users/Admin/Documents/NetBeansProjects/JavaApplication1/src/com/mycompany/demoduan1/icon/hellper/dao/KhoaHocDAO.java</file>
+            <file>file:/C:/Users/Admin/Documents/NetBeansProjects/JavaApplication1/src/com/mycompany/demoduan1/views/QLNhanVienJDialog.java</file>
+            <file>file:/C:/Users/Admin/Documents/NetBeansProjects/JavaApplication1/src/com/mycompany/demoduan1/service/NguoiHocService.java</file>
+            <file>file:/C:/Users/Admin/Documents/NetBeansProjects/JavaApplication1/src/com/mycompany/demoduan1/icon/hellper/dao/NguoiHocDAO.java</file>
+            <file>file:/C:/Users/Admin/Documents/NetBeansProjects/JavaApplication1/src/com/mycompany/demoduan1/icon/hellper/dao/NhanVienDAO.java</file>
+            <file>file:/C:/Users/Admin/Documents/NetBeansProjects/JavaApplication1/src/com/mycompany/demoduan1/views/QLNguoiHocJDialog.java</file>
         </group>
     </open-files>
 </project-private>

@@ -22,7 +22,6 @@ public class NguoiHoc {
     private String ghiChu;
     private String maNV;
     private Date ngayDK;
-
     @Override
     public String toString() {
         return this.hoTen;
